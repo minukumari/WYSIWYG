@@ -1,0 +1,62 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Nunito:400' rel='stylesheet' type='text/css'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+     
+    <script src="https://code.jquery.com/jquery-1.12.3.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/0.9.0rc1/jspdf.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="WYSIWYG.css">
+
+	<div class="container">
+    <div class="wysiwyg">
+	<h1>WYSIWYG EDITOR</h1>
+	   <div class="panel-boutons">
+        <div class="bouton-groupe">
+      	<button type="button" id="bold" title="bold"><i class="fa fa-bold"></i></button>
+		<button type="button" id="italic" title="italic"><i class="fa fa-italic"></i></button>
+		<button type="button" id="underline" title="underline"><i class="fa fa-underline"></i></button>
+		
+        <button type="button" id="justifyleft" title="justifyleft"><i class="fa fa-align-left"></i></button>
+		<button type="button" id="justifycenter" title="justifycenter"><i class="fa fa-align-center"></i></button>
+        <button type="button" id="justifyright" title="justifyright"><i class="fa fa-align-right"></i></button>
+        <button type="button" id="justifyfull" title="justifyfull"><i class="fa fa-align-justify"></i></button>
+   
+   
+        <button type="button" id="insertunorderedlist" title="unordered list"><i class="fa fa-list-ul"></i></button>
+        <button type="button" id="insertorderedlist" title="ordered list"><i class="fa fa-list-ol"></i></button>
+   
+  
+        <button type="button" id="indent" title="indent"><i class="fa fa-indent"></i></button>
+        <button type="button" id="outdent" title="outdent"><i class="fa fa-outdent"></i></button>
+   
+   
+        <button type="button" id="undo" title="undo"><i class="fa fa-undo"></i></button>
+        <button type="button" id="redo" title="redo"><i class="fa fa-undo"></i></button>
+        <button type="button" id="delete" title="delete"><i class="fa fa-eraser"></i></button>
+  
+   
+        <button type="button" id="createLink" title="insert link"><i class="fa fa-link"></i></button>
+        <button type="button" id="insertImage" title="insert image"><i class="fa fa-picture-o"></i></button>
+
+        <button type="button" id="forecolor" title="text color"><i class="fa fa-font"></i></button>
+        <button type="button" id="backcolor" title="background color"><i class="fa fa-tint"></i></button>
+        <button type="button" id="fontsize" title="fontsize"><i class="fa fa-chevron-circle-down"></i></button>
+        
+        <button type="button" id="fontName" title="font style"><i class="fa fa-text-height"></i></button>
+        <button type="button" id="insertParagraph" title="insert paragraph"><i class="fa fa-paragraph"></i></button>
+        <button type="button" id="insertText" title="insert text"><i class="fa fa-adn"></i></button>
+        <button type="button" id="copy" title="copy"><i class="fa fa-copy"></i></button>
+        <button type="button" id="cut" title="cut"><i class="fa fa-cut"></i></button>
+        <button type="button" id="paste" title="paste"><i class="fa fa-paste"></i></button>
+        <button type="button" id="selectAll" title="Select all"><i class="fa fa-check-square"></i></button></div></div>
+        <div class="editeur1" contentEditable id="editeur"></div>
+        <div class="htmlview"></div>
+		    <div id="editor"></div>  
+		    <div class="boutons-form">
+		    	File Name: <input type="text" id="textfeild" class="textfeild1">
+		     	<button type="button" id="save">Save</button>
+		        <button id="cmd">Save As PDF</button>
+		        </div></div></div>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+<script src="WYSIWYG.js"></script>
